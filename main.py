@@ -2,13 +2,16 @@
 
 print("Weather Forecasting Website Application")
 
+# give access to the config file
 import config
 
+# import necessary libraries
 import requests
 import json
 import ipinfo
 from geopy.geocoders import Nominatim
 
+# obtain api_key and api_host values from the config file
 APIKey = config.api_key
 API_HOST = config.api_host
  
