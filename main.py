@@ -114,13 +114,13 @@ if choice == 1:
 elif choice == 2:
     weatherGet2(getLoc.latitude,getLoc.longitude)
 elif choice == 3:
-    weatherGet2(getLoc.latitude,getLoc.longitude)
+    weatherGet3(getLoc.latitude,getLoc.longitude)
 elif choice == 4:
-    weatherGet2(getLoc.latitude,getLoc.longitude)
+    weatherGet4(getLoc.latitude,getLoc.longitude)
 elif choice == 5:
     hours = int(input("\nHow many hours do you want to see into the future? "))
     while hours < 0 or hours > 120:
         hours = int(input("\nEnter a valid number of hours: "))
-    weatherGet2(getLoc.latitude,getLoc.longitude,hours)
+    weatherGet5(getLoc.latitude,getLoc.longitude,hours)
 else:
-    weatherGet2(getLoc.latitude,getLoc.longitude)
+    weatherGet6(getLoc.latitude,getLoc.longitude)
